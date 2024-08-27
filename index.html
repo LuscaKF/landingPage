@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/css/classes.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#home">Ínicio</a>
+      </h1>
+
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#intro">Curiosidades</a></li>
+          <li><a href="#grid-one">Projetos</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#pricing">Trabalho</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Sobre mim:</h2>
+        <p>💻 Minha jornada no desenvolvimento de software começou durante meus estudos, onde tive a chance de explorar linguagens como JavaScript, Java, TS, React, NodeJS, 
+          PHP e Laravel Framework, além do conhecimento de linguagens, tenho um conhecimento básico na área de computação em nuvem, sendo certificado pela Microsoft na 
+          plataforma Azure 2x, AZ900 e AZ104. Desde então, tenho me dedicado a aprimorar minhas habilidades técnicas e acompanhar as últimas tendências da indústria.</p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
+      </div>
+    </div>
+  </section>
+
+  <section id="intro" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Curiosidades??</h2>
+      <p>Uma curiosidade sobre você é que, além de sua dedicação ao desenvolvimento de projetos de tecnologia, como APIs e aplicações web, você também está cursando 
+        Administração e tem interesse em áreas como Finanças, Empreendedorismo e Gestão. Essa combinação de conhecimentos técnicos e de 
+        negócios te dá uma perspectiva única!</p>
+      <p>Outra curiosidade sobre você é que está se aventurando em disciplinas de Redes de Computadores e Lógica e Matemática Computacional, o que mostra o quanto você 
+        valoriza tanto a parte prática da tecnologia, com simulações no Cisco Packet Tracer, quanto o pensamento lógico e analítico. 
+        Essa diversidade de interesses te torna ainda mais versátil e bem preparada para diferentes desafios!</p>
+      <p>Uma curiosidade interessante é que você gosta de seguir roteiros detalhados para executar suas atividades, especialmente em projetos e estudos. 
+        Isso reflete uma abordagem organizada e metódica, que provavelmente te ajuda a lidar com várias disciplinas e projetos simultaneamente, 
+        garantindo que você não perca o foco em nenhum detalhe importante.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Meus 3 principais projetos!</h2>
+      <p class="grid-description">Uma breve descrição.</p>
+
+      <div class="grid">
+        <article>
+          <h3>API de Cardápio Digital (Cardápio API) com Spring Boot</h3>
+          <p>Você desenvolveu uma API de cardápio digital que permite realizar operações CRUD para gerenciar os itens do menu. 
+            O projeto envolve o uso de DTOs para transferir dados de requisição e resposta, além de incluir o tratamento adequado de exceções. 
+            Um detalhe importante é que você implementou um sistema de controle de acesso, no qual apenas o usuário administrador pode registrar alimentos, 
+            enquanto os usuários comuns podem apenas visualizar os itens.</p>
+        </article>
+        <article>
+          <h3>Aplicação de Listagem e Gestão de Pessoas em Angular</h3>
+          <p>Este projeto foi parte de uma avaliação, onde você criou uma aplicação em Angular para listar, registrar, editar e excluir pessoas. 
+            A aplicação inclui formulários com validações e componentes reutilizáveis, como uma tabela que exibe os dados das pessoas. 
+            Você trabalhou com uma simulação de API para gerenciar as informações de maneira dinâmica, usando serviços do Angular para conectar com o backend simulado.</p>
+        </article>
+        <article>
+          <h3>Aplicativo de Temporizador Pomodoro em React</h3>
+          <p>Este projeto foi uma aplicação que você criou em React para implementar um temporizador Pomodoro. Você utilizou hooks personalizados para controlar o 
+            fluxo de tempo e integrando notificações sonoras. A ideia era ajudar os usuários a seguirem uma rotina produtiva de trabalho e descanso, 
+            baseada na técnica Pomodoro.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Galeria</h2>
+      <p class="grid-description">União de 3</p>
+
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="https://cdn-icons-png.flaticon.com/256/174/174854.png" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCBJ8fz6KNK6Ut3df5khikEAXIkhoquFuFgw&s" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://bognarjunior.wordpress.com/wp-content/uploads/2018/01/1crcyaithv7aiqh1z93v99q.png" alt="random image from unsplash" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Trabalho atual.</h2>
+      <h2>Jovem aprendiz - Field Services</h2>
+      <p>- Prestação de suporte e atendimento ao cliente, assegurando a resolução eficiente de problemas.
+        - Atendimento de chamados técnicos, garantindo soluções rápidas e eficazes.
+        - Auxílio em projetos internos, contribuindo para o desenvolvimento e implementação de melhorias.
+        - Suporte ao usuário final, proporcionando uma experiência positiva e suporte técnico necessário.
+        - Colaboração com a equipe para otimização de processos e melhoria contínua dos serviços prestados.
+      </p>
+
+      <div class="responsive-table">
+        <table>
+          <caption>Tabela de conhecimento</caption>
+
+          <thead>
+            <tr>
+              <th>JavaScript</th>
+              <th>Java</th>
+              <th>Html</th>
+              <th>CSS</th>
+              <th>Angular</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>7.8</td>
+              <td>8.1</td>
+              <td>7.8</td>
+              <td>7.5</td>
+              <td>7.0</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Bom</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Agradecimento</h2>
+        <p>Agradeço pelo seu tempo para saber um pouco mais sobre mim e por aproveitar da interface do meu site!!</p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Me contate</legend>
+
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Your name">
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">last name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Your e-mail">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit">Send message</button>
+          </div>
+        </fieldset>
+      </div>  
+    </div>
+  </section>
+
+
+  <footer id="footer" class="footer white-bg">
+    <p><a rel="nofollow" target="_blank" href="https://beacons.page/otaviomiranda">Feito com <span class="heart">❤</span> por Lucas Kirow</a></p>
+  </footer>
+
+  <a class="back-to-top" href="#">➤</a>
+</body>
+
+</html>
